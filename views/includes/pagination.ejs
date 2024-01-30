@@ -1,0 +1,9 @@
+<section class="pagination">
+  <% if (pageSelected !== 1) { %>
+      <a href="?page=<%= pageSelected - 1 %>"><%= pageSelected - 1 %></a>
+  <% } %>
+      <a href="?page=<%= pageSelected %>" class="selected"><%= pageSelected %></a>
+  <% if (pageSelected !== numberPages) { %>
+      <a href="?page=<%= pageSelected + 1 %>"><%= pageSelected + 1 %></a>
+  <% } %>
+</section>
